@@ -12,13 +12,28 @@ import hand_dog from "../assets/hand_dog.PNG"
 import hand_yellow from "../assets/hand_yellow.PNG"
 import head_dog from "../assets/head_dog.PNG"
 import socks_short from "../assets/socks_short.PNG"
+import mouth_wenduji from "../assets/mouth_wenduji.PNG"
+import head_maid from "../assets/head_maid.PNG"
+import head_yellow from "../assets/head_yellow.PNG"
+import mouth_happy from "../assets/mouth_happy.PNG"
 
+import mouth_not_happy from "../assets/mouth_not_happy.PNG"
+import mouth_o from "../assets/mouth_o.PNG"
+import mouth_smoke from "../assets/mouth_smoke.PNG"
+import socks_middle from "../assets/socks_middle.PNG"
+import mouth_w from "../assets/mouth_w.PNG"
 
 export const DRESS_TYPE = {
     clothes: "clothes",
-    face: "face",
+    mouth: "mouth",
+    eye: "eye",
     jewelry: "jewelry",
     sock: "sock"
+}
+//是否允许共存
+export const COEXIST_TYPE = {
+    jewelry: true,
+
 }
 export const IMAGE_MAP = {
     clothes_dress_yellow: {
@@ -54,24 +69,24 @@ export const IMAGE_MAP = {
     eye_close: {
         image: eye_close,
         name: '闭眼',
-        type: DRESS_TYPE.face
+        type: DRESS_TYPE.eye
     },
     eye_cry: {
         image: eye_cry,
         name: '哭',
-        type: DRESS_TYPE.face
+        type: DRESS_TYPE.eye
 
     },
     eye_cry_2: {
         image: eye_cry_2,
         name: '拒绝',
-        type: DRESS_TYPE.face
+        type: DRESS_TYPE.eye
 
     },
     eye_normal: {
         image: eye_normal,
         name: '普通',
-        type: DRESS_TYPE.face
+        type: DRESS_TYPE.eye
 
     },
     hand_dog: {
@@ -90,66 +105,64 @@ export const IMAGE_MAP = {
         image: head_dog,
         name: '柴犬耳',
         type: DRESS_TYPE.jewelry
-
-
     },
     head_maid: {
-        image: head_dog,
+        image: head_maid,
         name: '女仆头饰',
         type: DRESS_TYPE.jewelry
 
     },
     head_yellow: {
-        image: head_dog,
+        image: head_yellow,
         name: '黄色蝴蝶结',
         type: DRESS_TYPE.jewelry
 
     },
-    mouse_happy: {
-        image: head_dog,
+    mouth_happy: {
+        image: mouth_happy,
         name: '开心',
-        type: DRESS_TYPE.face
+        type: DRESS_TYPE.mouth
 
     },
-    mouse_not_happy: {
-        image: head_dog,
+    mouth_not_happy: {
+        image: mouth_not_happy,
         name: '不开心',
-        type: DRESS_TYPE.face
+        type: DRESS_TYPE.mouth
 
     },
-    mouse_o: {
-        image: head_dog,
+    mouth_o: {
+        image: mouth_o,
         name: 'o嘴',
-        type: DRESS_TYPE.face
+        type: DRESS_TYPE.mouth
 
     },
-    mouse_smoke: {
-        image: head_dog,
+    mouth_smoke: {
+        image: mouth_smoke,
         name: '香烟',
-        type: DRESS_TYPE.face
+        type: DRESS_TYPE.mouth
 
     },
-    mouse_w: {
-        image: head_dog,
-        name: 'w嘴', type: DRESS_TYPE.face
+    mouth_w: {
+        image: mouth_w,
+        name: 'w嘴', type: DRESS_TYPE.mouth
 
     },
-    mouse_wenduji: {
-        image: head_dog,
+    mouth_wenduji: {
+        image: mouth_wenduji,
         name: '温度计',
-        type: DRESS_TYPE.face
+        type: DRESS_TYPE.mouth
 
     },
     socks_middle: {
-        image: head_dog,
+        image: socks_middle,
         name: '中筒袜',
-        type: DRESS_TYPE.face
+        type: DRESS_TYPE.sock
 
     },
     socks_short: {
         image: socks_short,
         name: '短袜',
-        type: DRESS_TYPE.face
+        type: DRESS_TYPE.sock
 
     },
 }

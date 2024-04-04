@@ -33,8 +33,12 @@ const TABS_LIST = [
         name: "饰品",
         value: DRESS_TYPE.jewelry
     }, {
-        name: "表情",
-        value: DRESS_TYPE.face
+        name: "眼睛",
+        value: DRESS_TYPE.eye
+        
+    }, {
+        name: "嘴",
+        value: DRESS_TYPE.mouth
         
     }, {
         name: "服装",
@@ -70,8 +74,8 @@ const TABS_LIST = [
     }
     
     .tab {
-        padding: 0 10px;
-        margin: 4px;
+        padding: 0 6px;
+        margin: 2px;
         display: inline-block;
         height: 30px;
         line-height: 30px;
