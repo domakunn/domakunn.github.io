@@ -1,9 +1,8 @@
 <script setup lang="ts">
-import {  RouterView } from 'vue-router'
 </script>
-
 <template>
-dressup
-
+    <div>
+        dress-up-page
+    </div>
 </template>
 
