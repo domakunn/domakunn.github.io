@@ -28,7 +28,9 @@ export const DRESS_TYPE = {
     mouth: "mouth",
     eye: "eye",
     jewelry: "jewelry",
-    sock: "sock"
+    sock: "sock",
+    sticker: 'sticker'
+
 }
 //是否允许共存
 export const COEXIST_TYPE = {

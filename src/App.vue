@@ -44,4 +44,13 @@ html,
     overflow: hidden;
     padding: 10px;
 }
+
+.hover {
+    cursor: pointer;
+    
+    &:hover {
+        opacity: .5;
+        
+    }
+}
 </style>

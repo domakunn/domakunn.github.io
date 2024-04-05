@@ -1,17 +1,19 @@
 <template>
     <div class="Right-Selections-wrapper">
-        <div class="left-tabs">
-            
+        <div class="top-tabs">
             <span @click="currentTab = item.value" :class="{
                 tab:true,
-                'active-tab':currentTab === item.value
+                'active-tab':currentTab === item.value,
+                hover:true
             }" v-for="item in TABS_LIST">{{ item.name }}</span>
         </div>
         <div class="expand-items">
             <span
                 :class="{
                 button:true,
-                'active-button':imageManager.imageList.value.find(i=>i.name === item.name)
+                'active-button':imageManager.imageList.value.find(i=>i.name === item.name),
+                 hover:true
+
             }"
                 @click="imageManager.toggleImage(item)"
                 v-for="item in DRESS_MAP[currentTab]">{{ item.name
@@ -48,6 +50,10 @@ const TABS_LIST = [
         name: "袜子",
         value: DRESS_TYPE.sock
         
+    }, {
+        name: "贴纸",
+        value: DRESS_TYPE.sticker
+        
     },
 ]
 
@@ -65,16 +71,17 @@ const TABS_LIST = [
     padding: 10px;
     
     
-    .left-tabs {
+    .top-tabs {
         display: flex;
-        justify-content: space-around;
+        flex-wrap: wrap;
         margin-bottom: 10px;
         flex-shrink: 0;
-        
+        justify-content: flex-start;
+        align-items: flex-start;
     }
     
     .tab {
-        padding: 0 6px;
+        padding: 0 4px;
         margin: 2px;
         display: inline-block;
         height: 30px;
@@ -87,7 +94,6 @@ const TABS_LIST = [
         color: #8d4b56;
         flex-shrink: 0;
         border: 4px solid transparent;
-        cursor: pointer;
     }
     
     .active-tab {
@@ -106,7 +112,6 @@ const TABS_LIST = [
     }
     
     .button {
-        cursor: pointer;
         background: #ea446b;
         font-size: 12px;
         letter-spacing: 0;

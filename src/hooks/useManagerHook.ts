@@ -32,8 +32,9 @@ export default function () {
             } else {
                 // 不允许共存
                 if (!COEXIST_TYPE[image.type]) {
+                    // 查询同类型元素
                     const i = imageList.value.findIndex(i => i.type === image.type)
-                    imageList.value.splice(i, 1)
+                    if (i !== -1) imageList.value.splice(i, 1)
                 }
                 imageList.value.push(image)
             }
