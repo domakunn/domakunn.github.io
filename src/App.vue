@@ -17,7 +17,6 @@ import {provide} from "vue";
 const imageManager = useManagerHook()
 provide('imageManager', imageManager)
 
-
 </script>
 
 
