@@ -3,7 +3,7 @@ import clothes_jk from "@/assets/clothes_jk.PNG"
 import clothes_maid from "@/assets/clothes_maid.PNG"
 import clothes_yelusilu from "@/assets/clothes_yelusilu.PNG"
 import clothes_yokada from "@/assets/clothes_yokada.PNG"
-import clthes_swimming from "@/assets/clthes_swimming.PNG"
+import clothes_swimming from "@/assets/clothes_swimming.PNG"
 import eye_close from "@/assets/eye_close.PNG"
 import eye_cry from "@/assets/eye_cry.PNG"
 import eye_cry_2 from "@/assets/eye_cry_2.PNG"
@@ -16,6 +16,8 @@ import mouth_wenduji from "@/assets/mouth_wenduji.PNG"
 import head_maid from "@/assets/head_maid.PNG"
 import head_yellow from "@/assets/head_yellow.PNG"
 import mouth_happy from "@/assets/mouth_happy.PNG"
+import wing_angel from "@/assets/wing_angel.png"
+import wing_demon from "@/assets/wing_demon.png"
 
 import mouth_not_happy from "@/assets/mouth_not_happy.PNG"
 import mouth_o from "@/assets/mouth_o.PNG"
@@ -23,13 +25,18 @@ import mouth_smoke from "@/assets/mouth_smoke.PNG"
 import socks_middle from "@/assets/socks_middle.PNG"
 import mouth_w from "@/assets/mouth_w.PNG"
 
+// import sticker_baqiao from "@/assets/sticker_baqiao.png"
+// import sticker_dabanshao from "@/assets/sticker_dabanshao.png"
+// import sticker_pasta from "@/assets/sticker_pasta.png"
+
+
 export const DRESS_TYPE = {
     clothes: "clothes",
     mouth: "mouth",
     eye: "eye",
     jewelry: "jewelry",
     sock: "sock",
-    sticker: 'sticker'
+    // sticker: 'sticker'
 
 }
 //是否允许共存
@@ -38,6 +45,22 @@ export const COEXIST_TYPE = {
 
 }
 export const IMAGE_MAP = {
+    // sticker_baqiao: {
+    //     image: sticker_baqiao,
+    //     name: '八桥饼',
+    //     type: DRESS_TYPE.sticker
+    // },
+    // sticker_pasta: {
+    //     image: sticker_pasta,
+    //     name: '明太子意面',
+    //     type: DRESS_TYPE.sticker
+    // },
+    // sticker_dabanshao: {
+    //     image: sticker_dabanshao,
+    //     name: '大阪烧',
+    //     type: DRESS_TYPE.sticker
+    // },
+
     clothes_dress_yellow: {
         image: clothes_dress_yellow,
         name: '黄色连衣裙',
@@ -63,8 +86,8 @@ export const IMAGE_MAP = {
         name: '和服',
         type: DRESS_TYPE.clothes
     },
-    clthes_swimming: {
-        image: clthes_swimming,
+    clothes_swimming: {
+        image: clothes_swimming,
         name: '泳装',
         type: DRESS_TYPE.clothes
     },
@@ -117,6 +140,18 @@ export const IMAGE_MAP = {
     head_yellow: {
         image: head_yellow,
         name: '黄色蝴蝶结',
+        type: DRESS_TYPE.jewelry
+
+    },
+    wing_angel: {
+        image: wing_angel,
+        name: '天使翅膀',
+        type: DRESS_TYPE.jewelry
+
+    },
+    wing_demon: {
+        image: wing_demon,
+        name: '小恶魔翅膀',
         type: DRESS_TYPE.jewelry
 
     },

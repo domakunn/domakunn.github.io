@@ -1,8 +1,17 @@
 <template>
     <div class="CenterCanvas-wrapper">
-        <img src="../assets/body.PNG">
         
-        <img v-for="i in imageManager.imageList.value" :src="i.image">
+        <div class="main-person">
+            <img src="../assets/body.PNG">
+            <img v-for="i in imageManager.imageList.value" :src="i.image">
+        </div>
+        
+        
+        <div class="sticker-container">
+            <img src="@/assets/sticker_baqiao.png">
+            <img src="@/assets/sticker_dabanshao.png">
+            <img src="@/assets/sticker_pasta.png">
+        </div>
     </div>
 </template>
 
@@ -16,12 +25,18 @@ const imageManager = inject('imageManager')
 </script>
 <style lang="scss">
 .CenterCanvas-wrapper {
-    width: 60%;
-    height: 100%;
-    background: #fff4f5;
+    width: 400px;
+    height: 600px;
+    background: #e4f6ff;
     border-radius: 10px;
-    margin: 0 10px;
+    margin: 0 50px;
     position: relative;
+    flex-grow: 0;
+    flex-shrink: 0;
+    border-color: white;
+    border-style: solid;
+    border-width: 40px 40px 120px 40px;
+    box-shadow: 0 0 10px 1px #dc6565;
     
     img {
         width: 100%;
@@ -30,6 +45,23 @@ const imageManager = inject('imageManager')
         position: absolute;
         left: 0;
         top: 0;
+    }
+    
+    .sticker-container {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: flex-end;
+        justify-content: space-between;
+        position: relative;
+        top: 110px;
+        
+        img {
+            position: relative;
+            width: 110px;
+            height: 110px;
+        }
     }
 }
 </style>

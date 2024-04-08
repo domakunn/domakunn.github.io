@@ -50,11 +50,12 @@ const TABS_LIST = [
         name: "袜子",
         value: DRESS_TYPE.sock
         
-    }, {
-        name: "贴纸",
-        value: DRESS_TYPE.sticker
-        
     },
+    // {
+    //     name: "贴纸",
+    //     value: DRESS_TYPE.sticker
+    //
+    // },
 ]
 
 
@@ -62,7 +63,7 @@ const TABS_LIST = [
 
 <style lang="scss">
 .Right-Selections-wrapper {
-    width: 20%;
+    width: 100%;
     height: calc(100% - 20px);
     border-radius: 10px;
     display: flex;
@@ -92,7 +93,6 @@ const TABS_LIST = [
         font-weight: bold;
         letter-spacing: 4px;
         color: #8d4b56;
-        flex-shrink: 0;
         border: 4px solid transparent;
     }
     

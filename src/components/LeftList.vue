@@ -29,6 +29,8 @@ const imageManager = inject('imageManager')
     background: #ffdde2;
     border-radius: 10px;
     padding: 10px;
+    flex-grow: 0;
+    flex-shrink: 0;
     
     .title {
         display: inline-block;

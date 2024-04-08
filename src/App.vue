@@ -12,11 +12,15 @@ import RightSelections from './components/RightSelections.vue'
 import LeftList from './components/LeftList.vue'
 import CenterCanvas from './components/CenterCanvas.vue'
 import useManagerHook from './hooks/useManagerHook'
-import {provide} from "vue";
+import {onMounted, provide} from "vue";
 
 const imageManager = useManagerHook()
 provide('imageManager', imageManager)
 
+onMounted(() => {
+
+    
+})
 </script>
 
 
@@ -42,6 +46,7 @@ html,
     flex-direction: row;
     overflow: hidden;
     padding: 10px;
+    align-items: center;
 }
 
 .hover {
