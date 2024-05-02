@@ -1,5 +1,5 @@
 <template>
-    <div class="dress-up-wrapper">
+    <div :class="['dress-up-wrapper',isMobile?'mobile':'']">
         <LeftList></LeftList>
         <CenterCanvas></CenterCanvas>
         <RightSelections></RightSelections>
@@ -12,15 +12,20 @@ import RightSelections from './components/RightSelections.vue'
 import LeftList from './components/LeftList.vue'
 import CenterCanvas from './components/CenterCanvas.vue'
 import useManagerHook from './hooks/useManagerHook'
-import {onMounted, provide} from "vue";
+import {onMounted, provide, ref} from "vue";
+import './mobile.scss'
 
 const imageManager = useManagerHook()
 provide('imageManager', imageManager)
+const isMobile = ref(false)
 
 onMounted(() => {
-
+    isMobile.value = window.screen.width < 500
+    
     
 })
+
+
 </script>
 
 
@@ -49,12 +54,5 @@ html,
     align-items: center;
 }
 
-.hover {
-    cursor: pointer;
-    
-    &:hover {
-        opacity: .5;
-        
-    }
-}
+
 </style>

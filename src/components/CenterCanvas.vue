@@ -38,7 +38,12 @@ const imageManager = inject('imageManager')
     border-width: 40px 40px 120px 40px;
     box-shadow: 0 0 10px 1px #dc6565;
     
+    .main-person img {
+        transform: scale(1.1);
+    }
+    
     img {
+        
         width: 100%;
         height: 100%;
         object-fit: contain;

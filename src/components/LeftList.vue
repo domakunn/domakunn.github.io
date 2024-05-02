@@ -58,4 +58,5 @@ const imageManager = inject('imageManager')
         }
     }
 }
+
 </style>

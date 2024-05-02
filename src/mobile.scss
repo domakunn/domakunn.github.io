@@ -1,0 +1,27 @@
+.mobile.dress-up-wrapper {
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  border: none;
+  border-radius: 0;
+  height: 100%;
+
+  .LeftList-wrapper {
+    display: none;
+  }
+
+  .CenterCanvas-wrapper {
+    width: 300px;
+    height: 460px;
+    margin: 4px 0;
+
+  }
+
+  .Right-Selections-wrapper {
+    border-radius: 0;
+    padding: 0;
+    height: 100%;
+  }
+
+}
