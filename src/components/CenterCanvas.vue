@@ -1,6 +1,5 @@
 <template>
-    <div class="CenterCanvas-wrapper">
-        
+    <div :style="style" id="Canvas" class="CenterCanvas-wrapper">
         <div class="main-person">
             <img src="../assets/body.PNG">
             <img v-for="i in imageManager.imageList.value" :src="i.image">
@@ -18,9 +17,33 @@
 
 <script lang="ts" setup>
 
-import {inject} from "vue";
+import {inject, onMounted, reactive, ref} from "vue";
 
 const imageManager = inject('imageManager')
+
+const style = reactive({})
+const isMobile = ref(false)
+
+onMounted(() => {
+    if (window.screen.width < 500) {
+        const $Canvas = document.getElementById('Canvas')
+        const {width, height} = document.querySelector('body').getBoundingClientRect()
+        const w = (width - 160)
+        Object.assign(style, {
+            width: w + 'px',
+            height: (w * 3 / 2) + 'px',
+            borderWidth: '20px 30px 60px 20px'
+        })
+    } else {
+        Object.assign(style, {
+            width: '400px',
+            height: '600px',
+            borderWidth: '40px 40px 120px 40px'
+            
+        })
+    }
+    console.log(style)
+})
 
 </script>
 <style lang="scss">
@@ -35,7 +58,7 @@ const imageManager = inject('imageManager')
     flex-shrink: 0;
     border-color: white;
     border-style: solid;
-    border-width: 40px 40px 120px 40px;
+    
     box-shadow: 0 0 10px 1px #dc6565;
     
     .main-person img {
@@ -53,19 +76,17 @@ const imageManager = inject('imageManager')
     }
     
     .sticker-container {
-        width: 100%;
-        height: 100%;
         display: flex;
         flex-direction: row;
         align-items: flex-end;
         justify-content: space-between;
-        position: relative;
-        top: 110px;
+        position: absolute;
+        margin-top: 150%;
         
         img {
             position: relative;
-            width: 110px;
-            height: 110px;
+            width: 30%;
+            height: 30%;
         }
     }
 }

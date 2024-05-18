@@ -24,6 +24,8 @@ import mouth_o from "@/assets/mouth_o.PNG"
 import mouth_smoke from "@/assets/mouth_smoke.PNG"
 import socks_middle from "@/assets/socks_middle.PNG"
 import mouth_w from "@/assets/mouth_w.PNG"
+import head_hbtu_glass from "@/assets/head_hbtu_glass.PNG"
+import head_hbtu_hat from "@/assets/head_hbtu_hat.PNG"
 
 // import sticker_baqiao from "@/assets/sticker_baqiao.png"
 // import sticker_dabanshao from "@/assets/sticker_dabanshao.png"
@@ -36,7 +38,6 @@ export const DRESS_TYPE = {
     eye: "eye",
     jewelry: "jewelry",
     sock: "sock",
-    // sticker: 'sticker'
 
 }
 //是否允许共存
@@ -45,22 +46,6 @@ export const COEXIST_TYPE = {
 
 }
 export const IMAGE_MAP = {
-    // sticker_baqiao: {
-    //     image: sticker_baqiao,
-    //     name: '八桥饼',
-    //     type: DRESS_TYPE.sticker
-    // },
-    // sticker_pasta: {
-    //     image: sticker_pasta,
-    //     name: '明太子意面',
-    //     type: DRESS_TYPE.sticker
-    // },
-    // sticker_dabanshao: {
-    //     image: sticker_dabanshao,
-    //     name: '大阪烧',
-    //     type: DRESS_TYPE.sticker
-    // },
-
     clothes_dress_yellow: {
         image: clothes_dress_yellow,
         name: '黄色连衣裙',
@@ -135,11 +120,21 @@ export const IMAGE_MAP = {
         image: head_maid,
         name: '女仆头饰',
         type: DRESS_TYPE.jewelry
-
     },
     head_yellow: {
         image: head_yellow,
         name: '黄色蝴蝶结',
+        type: DRESS_TYPE.jewelry
+    },
+    head_hbtu_glass: {
+        image: head_hbtu_glass,
+        name: '派对眼镜',
+        type: DRESS_TYPE.jewelry
+
+    },
+    head_hbtu_hat: {
+        image: head_hbtu_hat,
+        name: '派对帽子',
         type: DRESS_TYPE.jewelry
 
     },

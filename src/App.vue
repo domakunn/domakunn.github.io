@@ -21,8 +21,6 @@ const isMobile = ref(false)
 
 onMounted(() => {
     isMobile.value = window.screen.width < 500
-    
-    
 })
 
 
