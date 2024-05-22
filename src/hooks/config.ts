@@ -26,6 +26,8 @@ import socks_middle from "@/assets/socks_middle.PNG"
 import mouth_w from "@/assets/mouth_w.PNG"
 import head_hbtu_glass from "@/assets/head_hbtu_glass.PNG"
 import head_hbtu_hat from "@/assets/head_hbtu_hat.PNG"
+import clothes_zhoushu from "@/assets/clothes_zhoushu.png"
+import clothes_nanami from "@/assets/clothes_nanami.png"
 
 // import sticker_baqiao from "@/assets/sticker_baqiao.png"
 // import sticker_dabanshao from "@/assets/sticker_dabanshao.png"
@@ -46,6 +48,15 @@ export const COEXIST_TYPE = {
 
 }
 export const IMAGE_MAP = {
+    clothes_nanami: {
+        image: clothes_nanami,
+        name: '娜娜米套装',
+        type: DRESS_TYPE.clothes
+    }, clothes_zhoushu: {
+        image: clothes_zhoushu,
+        name: '咒术高中套装',
+        type: DRESS_TYPE.clothes
+    },
     clothes_dress_yellow: {
         image: clothes_dress_yellow,
         name: '黄色连衣裙',
